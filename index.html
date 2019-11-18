@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      #second,
+      #minute {
+        font-size: 4rem;
+      }
+      #timer-body {
+        height: 50vh;
+        margin-top: 1rem;
+      }
+      #body {
+        width: 60%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="body">
+      <div class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <a href="#" class="navbar-brand">Pomodoro Timer</a>
+      </div>
+
+      <div class="container text-center" id="timer-body">
+        <h1 class="display-4">Pomodoro Timer</h1>
+
+        <div class="container">
+          <div class="row">
+              <div class="bg-secondary text-center col" id="minute">25</div>
+            <div class="bg-primary text-center col" id="second">00</div>
+            
+          </div>
+          <div class="container mt-3">
+            <button class="btn btn-success" id="start">Start</button>
+            <button class="btn btn-danger" id="stop">Stop</button>
+            <button class="btn btn-primary" id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <h2 class="display-4 bg-primary text-light p-2 text-center" id="status">
+          Focus
+        </h2>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
